@@ -1,13 +1,14 @@
- import Calculator from './Calculator.jsx'
+ import React from "react";
+import ProductList from "./ProductList";
+import products from "./Products.js";
 
 function App() {
-
-
-   return(
-    <Calculator/>
-   )
-
-
+  return (
+    <div>
+      <h1>Product Showcase</h1>
+      <ProductList products={products} />
+    </div>
+  );
 }
 
-export default App
+export default App;
